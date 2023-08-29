@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.connect("mongodb://127.0.0.1:27017/fruitsDB?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.10.1");
-
+//changing it to a local database
 
 const postSchema = {
   title: String,
